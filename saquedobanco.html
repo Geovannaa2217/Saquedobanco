@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <link rel=“stylesheet” type=“text/css” href=“”>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Saque do banco </title>
+</head>
+<body>
+	<form>
+		<p> nome: <input type="text"id="nome"> </p>
+		<button type="button" onclick="obterDados()"> Validar </button>
+		<p> Resultados: <input type="text" id="result" readonly placeholder="Saida"> </p>
+		<p> senha: <input type="text"id="senha"></p>
+		<button type="button" onclick="obterDados()"> Validar </button>
+		<p> Resultado: <input type="text" id="result" readonly placeholder="Saida"></p>
+	</form>
+	<script>
+		function obterDados() {
+			let nome = document.getElementById("nome").value; //obter valor do campo
+			alert(nome); //exibi o valor obtido
+			document.getElementById("result").value = nome;
+			document.getElementById("result").style.color = "red";
+			alert("ok");
+			let senha = document.getElementById("senha").value;
+			alert(senha)
+			document.getElementById("result").value = senha;
+			document.getElementById("result").value = blue
+		}
+		let valor = window.prompt("Digite o valor");
+		 let saldo = window.prompt("Digite o valor do saldo");
+		let operacao= parseFloat(saldo) - parseFloat(saque);
+		if(valor != "" && saldo != ""){
+            let operacao =  parseFloat(saldo) - parseFloat(valor) ;
+		    alert(operacao);
+		    alert("Saque realizado com sucesso!");
+		}else{
+			alert("Campo não preenchido!");
+		}
+
+		
+		
+</script>
+
+</body>
+</html>
